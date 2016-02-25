@@ -6,6 +6,8 @@ services:
 env:
   matrix:
     - DOCKERFILE="master"
+    - DOCKERFILE="7"
+    - DOCKERFILE="6"
 
 before_script:
   - docker version
