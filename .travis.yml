@@ -6,6 +6,7 @@ services:
 env:
   matrix:
     - DOCKERFILE="master"
+    - DOCKERFILE="8"
     - DOCKERFILE="7"
     - DOCKERFILE="6"
 
