@@ -6,7 +6,7 @@ DRUSH for Drupal
 
 Version | Tags | Dockerfile
 --- | --- | --- | ---
-master | `master`, `8` | [Dockerfile](https://github.com/drupal-docker/drush/blob/master/master/Dockerfile)
+master | `master`, `9` | [Dockerfile](https://github.com/drupal-docker/drush/blob/master/master/Dockerfile)
 8 | `latest`, `8` | [Dockerfile](https://github.com/drupal-docker/drush/blob/master/8/Dockerfile)
 7 | `7` | [Dockerfile](https://github.com/drupal-docker/drush/blob/master/7/Dockerfile)
 6 | `6` | [Dockerfile](https://github.com/drupal-docker/drush/blob/master/6/Dockerfile)
@@ -28,7 +28,7 @@ No variables
 
 # Description
 
-@todo
+Drush is a command line shell and Unix scripting interface for Drupal. Drush core ships with lots of useful commands for interacting with code like modules/themes/profiles. Similarly, it runs update.php, executes sql queries and DB migrations, and misc utilities like run cron or clear cache. Drush can be extended by 3rd party commandfiles.
 
 # Good to know
 
