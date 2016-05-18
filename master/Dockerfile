@@ -2,6 +2,7 @@ FROM drupaldocker/php:cli
 MAINTAINER drupal-docker
 
 RUN apt-get update && apt-get install -y mysql-client \
+  && composer global config minimum-stability dev \
   && composer global require drush/drush:dev-master \
   && ln -s ~/.composer/vendor/bin/drush /usr/local/bin/drush \
   && drush core-status -y \
