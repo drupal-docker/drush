@@ -4,11 +4,12 @@ DRUSH for Drupal
 [![Build Status](https://travis-ci.org/drupal-docker/drush.svg?branch=master)](https://travis-ci.org/drupal-docker/drush)
 
 
-Version | Tags | Dockerfile | Layers
---- | --- | --- | --- | ---
-master | `latest`, `master`, `8` | [Dockerfile](https://github.com/drupal-docker/drush/blob/master/master/Dockerfile) | [![drupaldocker/drush:8](https://badge.imagelayers.io/drupaldocker/drush:8.svg)](https://imagelayers.io/?images=drupaldocker/drush:8)
-7 | `7` | [Dockerfile](https://github.com/drupal-docker/drush/blob/master/7/Dockerfile) | [![drupaldocker/drush:7](https://badge.imagelayers.io/drupaldocker/drush:7.svg)](https://imagelayers.io/?images=drupaldocker/drush:7)
-6 | `6` | [Dockerfile](https://github.com/drupal-docker/drush/blob/master/6/Dockerfile) | [![drupaldocker/drush:6](https://badge.imagelayers.io/drupaldocker/drush:6.svg)](https://imagelayers.io/?images=drupaldocker/drush:6)
+Version | Tags | Dockerfile
+--- | --- | --- | ---
+master | `master`, `8` | [Dockerfile](https://github.com/drupal-docker/drush/blob/master/master/Dockerfile)
+8 | `latest`, `8` | [Dockerfile](https://github.com/drupal-docker/drush/blob/master/8/Dockerfile)
+7 | `7` | [Dockerfile](https://github.com/drupal-docker/drush/blob/master/7/Dockerfile)
+6 | `6` | [Dockerfile](https://github.com/drupal-docker/drush/blob/master/6/Dockerfile)
 
 # Quickstart:
 
