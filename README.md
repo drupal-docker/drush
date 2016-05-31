@@ -1,8 +1,8 @@
-DRUSH for Drupal
+Dockerized DRUSH for Drupal
 -----------------------
 
 [![Build Status](https://travis-ci.org/drupal-docker/drush.svg?branch=master)](https://travis-ci.org/drupal-docker/drush)
-
+[![Docker Pulls](https://img.shields.io/docker/pulls/drupaldocker/drush.svg?maxAge=2592000)](https://hub.docker.com/r/drupaldocker/drush)
 
 Version | Tags | Dockerfile
 --- | --- | --- | ---
