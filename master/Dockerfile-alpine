@@ -1,0 +1,14 @@
+FROM drupaldocker/php-dev:5.6-alpine-cli
+MAINTAINER drupal-docker
+
+RUN apk add --no-cache --virtual .dd-build-deps mysql-client openssh-client rsync \
+  && cd ~ \
+  && git clone --depth 1 --branch master https://github.com/drush-ops/drush.git drush \
+  && cd drush \
+  && composer install \
+  && ln -s ~/drush/drush /usr/local/bin/drush \
+  && drush core-status -y \
+  && drush core-init -y \
+  && apk del .dd-build-deps
+
+CMD ["drush", "core-cli"]
