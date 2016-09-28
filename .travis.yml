@@ -4,18 +4,21 @@ services:
   - docker
 
 env:
-  matrix:
-    - DOCKERFILE="master"
-    - DOCKERFILE="8"
-    - DOCKERFILE="7"
-    - DOCKERFILE="6"
+  matrix:=
+    - DOCKERFILE="Dockerfile" DOCKERPATH="6"
+    - DOCKERFILE="Dockerfile-alpine" DOCKERPATH="6"
+    - DOCKERFILE="Dockerfile" DOCKERPATH="7"
+    - DOCKERFILE="Dockerfile-alpine" DOCKERPATH="7"
+    - DOCKERFILE="Dockerfile" DOCKERPATH="8"
+    - DOCKERFILE="Dockerfile-alpine" DOCKERPATH="8"
+    - DOCKERFILE="Dockerfile" DOCKERPATH="master"
+    - DOCKERFILE="Dockerfile-alpine" DOCKERPATH="master"
 
 before_script:
   - docker version
 
 script:
-  - docker build -t ${DOCKERFILE} ./${DOCKERFILE}
+  - docker build -f ./${DOCKERPATH}/${DOCKERFILE} -t ${DOCKERPATH} ./${DOCKERPATH}
 
 after_script:
   - docker images
-  - docker ps -a
