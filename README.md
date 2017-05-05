@@ -14,3 +14,6 @@ master  | `master`, `9` | [Dockerfile 9](https://github.com/drupal-docker/drush/
 .       | `7-alpine`    | [Dockerfile 7-alpine](https://github.com/drupal-docker/drush/blob/master/7/Dockerfile-alpine)
 6       | `6`           | [Dockerfile 6](https://github.com/drupal-docker/drush/blob/master/6/Dockerfile)
 .       | `6-alpine`    | [Dockerfile 6-alpine](https://github.com/drupal-docker/drush/blob/master/6/Dockerfile-alpine)
+
+## Notice
+- On June 5, 2017 PHP version for Drush 8 and master will be bumped from 5.6 to 7.0
